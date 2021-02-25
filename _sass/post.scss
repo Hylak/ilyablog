@@ -1,0 +1,63 @@
+
+.post_detail {
+    width: 70vw;
+    margin: 0px auto;
+    font-size: 1.2em;
+    //margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.post_detail h1 {
+    color: $base_color;
+}
+.post_detail img {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.post_detail p {
+    width: 100%;
+}
+
+.sakura {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    mask: url('/assets/images/sakura.svg');
+    mask-size: cover;
+    background-color: $accent_color;
+    margin-right: .3em;
+    margin-left: .3em;
+    transform: translateY(15%);
+}
+
+.post_header h1 {
+    margin: 10px 0px;
+}
+
+.post_header {
+    margin-bottom: 40px;
+}
+.post_header .tags {
+    color: $base_color;
+    font-size: 1em;
+    font-family: new_font_bold;
+    font-weight: 800;
+}
+
+.post_content p img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: 0px auto;
+}
+
+.post_header a {
+    color: $base_color;
+    text-decoration: none;
+    transition: all 0.1s linear;
+}
+
+.post_header a:hover {
+    color: $accent_color;
+}

@@ -1,0 +1,13 @@
+footer {
+    margin: 0px auto;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: new_font;
+}
+
+footer > div {
+    width: 50vw;
+    text-align: center;
+}

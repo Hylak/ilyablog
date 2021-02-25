@@ -1,0 +1,65 @@
+$base_color: #267a26;
+$accent_color: #ffaaaa;
+
+@font-face {
+    font-family: new_font;
+    src: url('/assets/fonts/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: new_font_bold;
+    src: url('/assets/fonts/JosefinSans-Bold.ttf');
+}
+
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: new_font;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+nav li a {
+    color: $base_color;
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.1s linear;
+}
+
+nav li a:hover {
+    color: $accent_color;
+}
+nav .current {
+    color: $accent_color;
+    font-weight: bolder;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.error_page {
+    text-align: center;
+    margin-top: 10vh;
+}
