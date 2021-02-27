@@ -23,7 +23,9 @@
     width: 15px;
     height: 15px;
     display: inline-block;
+    -webkit-mask: url('/assets/images/sakura.svg');
     mask: url('/assets/images/sakura.svg');
+    -webkit-mask-size: cover;
     mask-size: cover;
     background-color: $accent_color;
     margin-right: .3em;
