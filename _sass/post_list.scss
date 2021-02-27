@@ -61,6 +61,8 @@
     background-color: white;
     padding: 25px;
     padding-top: 0px;
+    border: $accent_color 1px solid;
+    border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.5)
 }
 
@@ -84,9 +86,6 @@
 
 @media (min-width: 1200px) {
     .post {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: row;
     }
 
@@ -98,9 +97,5 @@
         width: 50%;
         margin-top: 0px;
         margin-left: -70px;
-        background-color: white;
-        padding: 25px;
-        padding-top: 0px;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.5)
     }
 }
