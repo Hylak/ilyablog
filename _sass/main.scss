@@ -68,3 +68,7 @@ main {
     text-align: center;
     margin-top: 10vh;
 }
+
+::selection {
+    background-color: pink;
+}
