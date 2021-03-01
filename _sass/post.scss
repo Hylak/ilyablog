@@ -1,6 +1,6 @@
 
 .post_detail {
-    width: 70vw;
+    width: 60vw;
     margin: 0px auto;
     font-size: 1.2em;
     margin-bottom: 5vh;
@@ -20,7 +20,7 @@
 }
 
 .post_header {
-    margin-bottom: 40px;
+    margin-bottom: 5vh;
 
     h1 {
         margin: 10px 0px;
@@ -35,13 +35,13 @@
             color: $accent_color;
         }
     }
+}
 
-    .tags {
-        color: $base_color;
-        font-size: 1em;
-        font-family: new_font_bold;
-        font-weight: 800;
-    }
+.tags {
+    color: $base_color;
+    font-size: 1em;
+    font-family: new_font_bold;
+    font-weight: 800;
 }
 
 .sakura {
@@ -58,9 +58,18 @@
     transform: translateY(15%);
 }
 
-.post_content p img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    margin: 0px auto;
+.post_content {
+    text-align: justify;
+    line-height: 1.5em;
+
+    p img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        margin: 0px auto;
+    }
+
+    p::first-letter {
+        font-size: 150%;
+    }
 }

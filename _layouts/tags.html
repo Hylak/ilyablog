@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<h1>{{ page.tag }}</h1>
+
+<ul>
+    {% assign filtered_posts = site.posts | where: 'tags', page.tag %}
+
+    {% for post in filtered_posts %}
+        <article class="post">
+            <a href="{{ post.url }}" class="bg_image" style="background-image: url(/assets/images/posts/main_images/{{ post.image }})"></a>
+            <div class="post_text">
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                {{ post.excerpt }}
+                <div class="post_extra">
+                    <div class="tags">{{ post.tags | join: ' ' | upcase }}</div>
+                    <div class="read_more"><a href="{{ post.url }}">Leer más >></a></div>
+                </div>
+            </div>
+        </article>
+    {% endfor %}
+</ul>

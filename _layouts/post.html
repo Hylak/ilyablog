@@ -6,18 +6,19 @@
     <div class="post_detail">
         <div class="post_header">
             <h1>{{ page.title }}</h1>
-                <span>Por Ilya</span> 
+                <span>Por Ilya</span>
                 
                 <span class="post_date"> el {{ page.date | date: "%m/%d/%Y" }}</span>
-                {% if page.tags %}
-                    <span class="sakura"></span>
-                    <span class="tags">{{ page.tags | array_to_sentence_string | upcase }}</span>
-                {% endif %}
+                <span class="sakura"></span>
+                
         </div>
         <div class="post_content">
             <img src="/assets/images/posts/main_images/{{ page.image }}" alt="">
             {{ content }}
         </div>
+        {% if page.tags %}
+            <span class="tags">{{ page.tags | join: ' ' | upcase }}</span>
+        {% endif %}
     </div>
 </main>
 {% include footer.html %}

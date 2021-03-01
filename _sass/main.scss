@@ -11,6 +11,11 @@ $accent_color: #ffaaaa;
     src: url('/assets/fonts/JosefinSans-Bold.ttf');
 }
 
+@font-face {
+    font-family: title_font;
+    src: url('/assets/fonts/Nathalia.ttf');
+}
+
 html {
     height: 100%;
 }
@@ -22,12 +27,16 @@ body {
     font-family: new_font;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 70vw;
+    width: 60vw;
     border-top: $base_color 1px solid;
     border-bottom: $base_color 1px solid;
     margin: 0px auto;

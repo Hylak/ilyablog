@@ -4,10 +4,12 @@
         <article class="post">
           <a href="{{ post.url }}" class="bg_image" style="background-image: url(/assets/images/posts/main_images/{{ post.image }})"></a>
           <div class="post_text">
-              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              <h2><a href="{{ post.url }}">{{ post.title | capitalize }}</a></h2>
               {{ post.excerpt }}
               <div class="post_extra">
-                  <div class="tags">{{ post.tags | array_to_sentence_string | upcase }}</div>
+                  <div class="tags">
+                      <a href="tags/{{  post.tags | first }}.html">{{ post.tags | first | upcase }}</a>
+                  </div>
                   <div class="read_more"><a href="{{ post.url }}">Leer más >></a></div>
               </div>
           </div>

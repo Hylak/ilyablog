@@ -1,6 +1,8 @@
 ---
 author: Ilya
 image: f3.jpg
+tags: personal caca
+title: kiwi
 ---
 
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
