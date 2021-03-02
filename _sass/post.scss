@@ -24,6 +24,7 @@
 
     h1 {
         margin: 10px 0px;
+        font-family: title_font;
     }
 
     a {
@@ -37,12 +38,12 @@
     }
 }
 
-.tags {
-    color: $base_color;
-    font-size: 1em;
-    font-family: new_font_bold;
-    font-weight: 800;
-}
+// .tags {
+//     color: $base_color;
+//     font-size: 1em;
+//     font-family: new_font_bold;
+//     font-weight: 800;
+// }
 
 .sakura {
     width: 15px;
