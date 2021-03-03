@@ -1,4 +1,4 @@
 - name: recetas
-  tag: receta
+  extension: jpg
 - name: personales
-  tag: personal
+  extension: jpg

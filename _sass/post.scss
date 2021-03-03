@@ -70,12 +70,16 @@
 
 .post_tags {
     margin-top: 5vh;
-    border: $base_color 1px solid;
-    padding: .7em;
     font-family: new_font_bold;
-    color: $accent_color;
-    width: max-content;
-
+    font-size: .9em;
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px auto;
+    
+    & > div {
+        display: block;
+    }
     a {
         color: $base_color;
         text-decoration: none;
@@ -84,5 +88,12 @@
         &:hover {
             color: $accent_color;
         }
+    }
+
+    .post_tags_item {
+        border: $base_color 1px solid;
+        padding: .7em;
+        margin-bottom: 5px;
+        margin-right: 5px;
     }
 }

@@ -16,14 +16,12 @@
             <img src="/assets/images/posts/main_images/{{ page.image }}" alt="">
             {{ content }}
         </div>
+        
         {% if page.tags %}
             <div class="post_tags">
                 {% for tag in page.tags %}
-                    {% for web_tag in site.data.tags %}
-                        {% if web_tag.tag == tag %}
-                            <a href="/tags/{{ web_tag.name }}">{{ web_tag.tag | upcase }}</a>{{ " " }}
-                        {% endif %}
-                    {% endfor %}
+                    <div class="post_tags_item"><a href="/tags/{{ tag }}">{{ tag | upcase }}</a>{{ " " }}</div>
+                        
                 {% endfor %}
             </div>
         {% endif %}

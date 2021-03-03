@@ -2,12 +2,7 @@
 layout: default
 ---
 <div class="tags_section">
-    {% for t in site.data.tags %}
-        
-        {% if t.tag == page.tag %}
-            <h1 class="tags_title">{{ t.name | capitalize }}</h1>
-        {% endif %}
-    {% endfor %}
+    <h1 class="tags_title">{{ page.tag | capitalize }}</h1>
     <div class="tags_list">
         
         {% assign filtered_posts = site.posts | where: 'tags', page.tag %}

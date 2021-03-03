@@ -1,7 +1,7 @@
 ---
 author: Ilya
 image: f3.jpg
-tags: personal
+tags: personales
 title: kiwi
 ---
 

@@ -6,7 +6,7 @@ layout: default
     <div class="tags_list">
         {% for tag in site.data.tags %}
             <article class="tags_post">
-                <a href="/tags/{{ tag.name }}" class="tags_bg_image" style="background-image: url(/assets/images/posts/main_images/{{ post.image }})"></a>
+                <a href="/tags/{{ tag.name }}" class="tags_bg_image" style="background-image: url(/assets/images/posts/tag_images/{{ tag.name }}.{{ tag.extension }})"></a>
                 <div class="tags_post_text">
                     <h2><a href="/tags/{{ tag.name }}">{{ tag.name | capitalize }}</a></h2>       
                 </div>
