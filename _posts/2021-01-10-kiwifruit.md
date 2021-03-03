@@ -1,7 +1,7 @@
 ---
 author: Ilya
 image: f3.jpg
-tags: personales caca
+tags: personal
 title: kiwi
 ---
 

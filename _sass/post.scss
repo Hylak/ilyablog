@@ -38,13 +38,6 @@
     }
 }
 
-// .tags {
-//     color: $base_color;
-//     font-size: 1em;
-//     font-family: new_font_bold;
-//     font-weight: 800;
-// }
-
 .sakura {
     width: 15px;
     height: 15px;
@@ -72,5 +65,24 @@
 
     p::first-letter {
         font-size: 150%;
+    }
+}
+
+.post_tags {
+    margin-top: 5vh;
+    border: $base_color 1px solid;
+    padding: .7em;
+    font-family: new_font_bold;
+    color: $accent_color;
+    width: max-content;
+
+    a {
+        color: $base_color;
+        text-decoration: none;
+        transition: all 0.1s linear;
+
+        &:hover {
+            color: $accent_color;
+        }
     }
 }
