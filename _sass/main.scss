@@ -1,6 +1,11 @@
 $base_color: #267a26;
 $accent_color: #ffaaaa;
 
+$smallest_width: 70vw;
+$small_width: 80vw;
+$normal_width: 90vw;
+$big_width: 95vw;
+
 @font-face {
     font-family: new_font;
     src: url('/assets/fonts/JosefinSans-Regular.ttf');
@@ -36,11 +41,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 60vw;
+    width: $big_width;
     border-top: $base_color 1px solid;
     border-bottom: $base_color 1px solid;
     margin: 0px auto;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 
     ul {
         display: flex;
@@ -81,4 +86,20 @@ main {
 
 ::selection {
     background-color: pink;
+}
+
+@media (min-width: 768px) {
+    nav {
+        width: $normal_width;
+    } 
+}
+@media (min-width: 1024px) {
+    nav {
+        width: $small_width;
+    }
+}
+@media (min-width: 1280px) {
+    nav {
+        width: $smallest_width;
+    }
 }

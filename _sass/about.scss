@@ -1,22 +1,24 @@
 .about {
     align-items: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: center;
     justify-content: space-between;
     margin: 0px auto;
     margin-top: 5vh;
     text-align: center;
-    width: 70vw;
+    width: $big_width;
 
     .about_image {
-        width: 100%;
+        img {
+            width: 100%;
+        }
     }
 
     .about_text {
-        font-size: 30px;
+        font-size: 1.4em;
         text-align: justify;
-        width: 50vw;
+        
     }
 }
 
@@ -40,21 +42,26 @@
     background-color: $base_color;
 }
 
-@media (min-width: 1200px) {
-  
+@media (min-width: 768px) {
     .about {
-        .about_image {
-            width: 30vw;
-            img {
-                height: 100%;
-                max-width: 100%;
-                display: block;
-                margin: auto;
-            }
-        }
-        .about_text {
-            padding: 10px;
-            width: 35vw;
-        }    
+        width: $normal_width;
+    } 
+}
+@media (min-width: 1024px) {
+    .about {
+        width: $small_width;
+    }
+}
+@media (min-width: 1280px) {
+    .about {
+        width: $smallest_width;
+        flex-direction: row;
+    }
+    .about_image {
+        padding: 1em;
+        width: 40%;
+    }
+    .about_text {
+        padding: 1em;
     }
 }

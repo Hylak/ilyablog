@@ -1,6 +1,5 @@
-
 .post_detail {
-    width: 60vw;
+    width: $big_width;
     margin: 0px auto;
     font-size: 1.2em;
     margin-bottom: 5vh;
@@ -95,5 +94,23 @@
         padding: .7em;
         margin-bottom: 5px;
         margin-right: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .post_detail {
+        width: $normal_width;
+    }
+}
+
+@media (min-width: 1024px) {
+    .post_detail {
+        width: $small_width;
+    }
+}
+
+@media (min-width: 1280px) {
+    .post_detail {
+        width: $smallest_width;
     }
 }

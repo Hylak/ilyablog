@@ -5,7 +5,7 @@
     font-size: 1.2em;
     justify-content: center;
     margin: 0px auto;
-    width: 85vw;
+    width: $big_width;
 
     & > div {
         display: block;
@@ -41,8 +41,6 @@
     color: $base_color;
     margin-bottom: 5vh;
 }
-
-
 
 .tags_post {
     display: flex;
@@ -85,5 +83,31 @@
     text-align: center;
     p {
         text-align: justify;
+    }
+}
+
+@media (min-width: 768px) {
+    .tags_list {
+        width: $normal_width;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tags_list {
+        width: $small_width;
+    }
+
+    .tags_post {
+        width: 250px
+    }
+}
+
+@media (min-width: 1280px) {
+    .tags_list {
+        width: $smallest_width;
+    }
+
+    .tags_post {
+        width: 250px
     }
 }
