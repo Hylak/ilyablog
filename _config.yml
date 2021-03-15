@@ -31,9 +31,6 @@ github_username:  test
 theme: minima
 plugins:
   - jekyll-feed
-collections:
-  authors:
-    output: true
 
 defaults:
   - scope:
