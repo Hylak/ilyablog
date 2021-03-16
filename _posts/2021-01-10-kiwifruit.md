@@ -3,6 +3,7 @@ author: Ilya
 image: f3.jpg
 tags: personales
 title: kiwi
+resum: Hace unos días hice esta crema y hoy os traigo la receta. Os cuento un poco sobre dos de sus ingredientes.
 ---
 
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible

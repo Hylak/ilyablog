@@ -1,11 +1,17 @@
 ---
 author: Ilya
-image: crema-urea.jpg
-tags: recetas
 title: Receta crema urea y pantenol
-date: 2021-03-13T11:06:53.287Z
+date: 2021-03-16T09:42:13.725Z
+tags: recetas
+resum: Hace unos días hice esta crema y hoy os traigo la receta. Os cuento un
+  poco sobre dos de sus ingredientes.
+image: crema-urea-receta.jpg
+published: true
 ---
 Hace unos días hice esta crema y hoy os traigo la receta. Os cuento un poco sobre dos de sus ingredientes:
+
+![Crema urea y pantenol](/assets/images/posts/crema-urea-receta.jpg)
+
 
 ### Urea
 
@@ -30,4 +36,3 @@ En invierno tengo la piel de las manos muy secas, junto con los geles hidroalcoh
 
 lalala
 
-![Crema urea y pantenol](/assets/images/posts/crema-urea-receta.jpg)

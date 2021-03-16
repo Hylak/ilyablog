@@ -3,9 +3,11 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 local_backend: true
 media_folder: 'assets/images/posts'
+publish_mode: 'editorial_workflow'
+locale: 'es'
 collections:
   - name: 'blog'
-    label: 'Blog'
+    label: 'Post'
     folder: '_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -13,7 +15,11 @@ collections:
       preview: false
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Autor', name: 'author', widget: 'hidden', default: 'Ilya' }
+      - { label: 'Título', name: 'title', widget: 'string' }
+      - { label: 'Fecha', name: 'date', widget: 'datetime' }
       - { label: 'Tags', name: 'tags', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Resumen', name: 'resum', widget: 'string' }
+      - { label: 'Imagen Principal', name: 'image', widget: 'string' }
+      - { label: 'Publicado', name: 'published', widget: 'boolean', default: false, required: false }
+      - { label: 'Texto', name: 'body', widget: 'markdown' }
