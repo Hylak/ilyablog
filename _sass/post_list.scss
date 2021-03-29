@@ -18,7 +18,10 @@
     h2 > a {
         color: $base_color;
         font-family: title_font;
-        font-size: 1.3em;
+        //font-size: 1.3em;
+        font-size: 0.9em;
+        line-height: 0px;
+        font-weight: lighter;
 
         &:hover {
             color: $accent_color;

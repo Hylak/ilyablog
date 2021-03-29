@@ -1,5 +1,6 @@
 $base_color: #267a26;
 $accent_color: #ffaaaa;
+$beige_color: #fff5e1;
 
 $smallest_width: 70vw;
 $small_width: 80vw;
@@ -8,17 +9,18 @@ $big_width: 95vw;
 
 @font-face {
     font-family: new_font;
-    src: url('/assets/fonts/JosefinSans-Regular.ttf');
+    src: url('/assets/fonts/GeosansLight.ttf');
 }
 
 @font-face {
     font-family: new_font_bold;
-    src: url('/assets/fonts/JosefinSans-Bold.ttf');
+    src: url('/assets/fonts/CaviarDreams_Bold.ttf');
 }
 
 @font-face {
     font-family: title_font;
-    src: url('/assets/fonts/Nathalia.ttf');
+    src: url("/assets/fonts/helloButterfly.otf") format("opentype");
+    //src: url('/assets/fonts/Nathalia.ttf');
 }
 
 html {
@@ -30,10 +32,21 @@ body {
     flex-direction: column;
     min-height: 100%;
     font-family: new_font;
+    background-color:$beige_color;
+    margin: 0px;
 }
 
 a {
     text-decoration: none;
+}
+
+.header {
+    margin: 0px auto;
+    div {
+        height: 150px;
+        width: 150px;
+        background-color: rgb(122, 194, 113);
+    }
 }
 
 nav {
@@ -41,36 +54,83 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: $big_width;
-    border-top: $base_color 1px solid;
-    border-bottom: $base_color 1px solid;
+    width: 100%;
     margin: 0px auto;
-    margin-bottom: 3vh;
-
+    background-color: $accent_color;
+ 
     ul {
         display: flex;
         list-style-type: none;
         margin: 0;
         overflow: hidden;
-        padding: 0;
+        padding: 0;  
     }
 
     li a {
-        color: $base_color;
+        color: $beige_color;
         display: inline-block;
         padding: 14px 16px;
         text-align: center;
-        text-decoration: none;
         transition: all 0.1s linear;
+        font-size: 1.2em;
 
         &:hover {
-            color: $accent_color;
+            background-color: pink;
         }
     }
 
     .current {
-        color: $accent_color;
+        color: $beige_color;
         font-weight: bolder;
+    }
+}
+
+.section_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: aquamarine;
+    color:white;
+    
+    .section_image {
+        width: 100%;
+        display: block;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #e6eef0;   
+    
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-bottom: 70%;
+        }
+    }
+
+    .section_info {
+        width: 65vw;
+        font-weight: bold;
+        text-align: center;
+        font-size: 2em;
+        padding: 1.5em;
+
+        .section_text {
+              
+        }
+
+        .section_button {
+            margin-top: 1em;
+            font-size: 0.8em;
+            padding: 0.5em 1em;
+            font-weight: bold;
+            border: 1px solid white;
+            display: inline-block;
+            a {
+                color: white;
+            }
+        }
     }
 }
 
@@ -87,19 +147,23 @@ main {
 ::selection {
     background-color: pink;
 }
-
+/*
 @media (min-width: 768px) {
-    nav {
-        width: $normal_width;
-    } 
-}
+    
+}*/
 @media (min-width: 1024px) {
-    nav {
-        width: $small_width;
+    .section_content {
+        flex-flow: row;
+
+        .section_image {
+            //width: 70%;
+        }
+
+        .section_info {
+            
+        }
     }
-}
+}/*
 @media (min-width: 1280px) {
-    nav {
-        width: $smallest_width;
-    }
-}
+    
+}*/
