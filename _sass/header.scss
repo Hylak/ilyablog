@@ -1,0 +1,43 @@
+.header {
+  margin: 0px auto;
+  div {
+    height: 150px;
+    width: 150px;
+    background-color: $verd_clar;
+  }
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: $rosa;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  li a {
+    color: $beige;
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+    transition: all 0.1s linear;
+    font-size: 1.2em;
+
+    &:hover {
+      background-color: pink;
+    }
+  }
+
+  .current {
+    color: $beige;
+    font-weight: bolder;
+  }
+}

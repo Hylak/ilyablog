@@ -1,169 +1,161 @@
-$base_color: #267a26;
-$accent_color: #ffaaaa;
-$beige_color: #fff5e1;
+// * Colors
+$beige: #fff5e1;
+$rosa: #fda2b3;
+$granate: #892c3d;
+$verd_fosc: #3c5b2a;
+$verd_clar: #a1bf77;
 
 $smallest_width: 70vw;
 $small_width: 80vw;
 $normal_width: 90vw;
 $big_width: 95vw;
 
+// * Color styles
+.verd_fosc {
+  background-color: $verd_fosc;
+}
+.verd_clar {
+  background-color: $verd_clar;
+}
+.granate {
+  background-color: $granate;
+}
+.rosa {
+  background-color: $rosa;
+}
+
+// * Fonts
 @font-face {
-    font-family: new_font;
-    src: url('/assets/fonts/GeosansLight.ttf');
+  font-family: new_font;
+  src: url("/assets/fonts/GeosansLight.ttf");
 }
 
 @font-face {
-    font-family: new_font_bold;
-    src: url('/assets/fonts/CaviarDreams_Bold.ttf');
+  font-family: new_font_bold;
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf");
 }
 
 @font-face {
-    font-family: title_font;
-    src: url("/assets/fonts/helloButterfly.otf") format("opentype");
-    //src: url('/assets/fonts/Nathalia.ttf');
+  font-family: title_font;
+  src: url("/assets/fonts/helloButterfly.otf") format("opentype");
 }
 
+// * Main styles
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    font-family: new_font;
-    background-color:$beige_color;
-    margin: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: new_font;
+  background-color: $beige;
+  margin: 0px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.header {
-    margin: 0px auto;
-    div {
-        height: 150px;
-        width: 150px;
-        background-color: rgb(122, 194, 113);
-    }
+// * Puts the footer at the bottom of the page if the page is shorter than the viewport
+main {
+  flex: 1 0 auto;
+  justify-items: center;
 }
 
-nav {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin: 0px auto;
-    background-color: $accent_color;
- 
-    ul {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        overflow: hidden;
-        padding: 0;  
-    }
-
-    li a {
-        color: $beige_color;
-        display: inline-block;
-        padding: 14px 16px;
-        text-align: center;
-        transition: all 0.1s linear;
-        font-size: 1.2em;
-
-        &:hover {
-            background-color: pink;
-        }
-    }
-
-    .current {
-        color: $beige_color;
-        font-weight: bolder;
-    }
+.error_page {
+  text-align: center;
+  margin-top: 10vh;
 }
 
+::selection {
+  background-color: pink;
+}
+
+// * Sections in the main page (img + text)
 .section_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  color: $beige;
+
+  .section_image {
+    // ! background-image tag on the html
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh; // ! pics en horitzontal petit queden curts, ampliar?
+  }
+
+  .section_info {
+    box-sizing: border-box;
+    width: 100vw;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    padding: 1.2em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    background-color: aquamarine;
-    color:white;
-    
+
+    .section_text {
+      p {
+        margin: 1.2rem 0rem;
+      }
+    }
+
+    .section_button {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 0.8em;
+      padding: 0.5em 1em;
+      font-weight: bold;
+      border: 1px solid $beige;
+      display: inline-block;
+      a {
+        color: $beige;
+      }
+    }
+  }
+}
+
+// * No background text in main page
+.section_empty {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    padding: 15vh 0vh;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .section_image {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section_content {
+    flex-flow: row;
+    height: 500px;
+
     .section_image {
-        width: 100%;
-        display: block;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #e6eef0;   
-    
-        &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            padding-bottom: 70%;
-        }
+      width: 50vw;
+      height: 100%;
     }
 
     .section_info {
-        width: 65vw;
-        font-weight: bold;
-        text-align: center;
-        font-size: 2em;
-        padding: 1.5em;
-
-        .section_text {
-              
-        }
-
-        .section_button {
-            margin-top: 1em;
-            font-size: 0.8em;
-            padding: 0.5em 1em;
-            font-weight: bold;
-            border: 1px solid white;
-            display: inline-block;
-            a {
-                color: white;
-            }
-        }
+      width: 50vw;
     }
+  }
 }
-
-main {
-    flex: 1 0 auto;
-    justify-items: center;
-}
-
-.error_page {
-    text-align: center;
-    margin-top: 10vh;
-}
-
-::selection {
-    background-color: pink;
-}
-/*
-@media (min-width: 768px) {
-    
-}*/
-@media (min-width: 1024px) {
-    .section_content {
-        flex-flow: row;
-
-        .section_image {
-            //width: 70%;
-        }
-
-        .section_info {
-            
-        }
-    }
-}/*
-@media (min-width: 1280px) {
-    
-}*/

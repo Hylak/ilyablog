@@ -1,67 +1,66 @@
 .about {
-    align-items: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    justify-content: space-between;
-    margin: 0px auto;
-    margin-top: 5vh;
-    text-align: center;
-    width: $big_width;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0px auto;
+  margin-top: 5vh;
+  text-align: center;
+  width: $big_width;
 
-    .about_image {
-        img {
-            width: 100%;
-        }
+  .about_image {
+    img {
+      width: 100%;
     }
+  }
 
-    .about_text {
-        font-size: 1.4em;
-        text-align: justify;
-        
-    }
+  .about_text {
+    font-size: 1.4em;
+    text-align: justify;
+  }
 }
 
 .about_social {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 
-    p {
-        padding-left: 5px;
-    }
+  p {
+    padding-left: 5px;
+  }
 }
 
 .social_icon {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    -webkit-mask: url('/assets/images/insta.svg');
-    mask: url('/assets/images/insta.svg');
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    background-color: $base_color;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  -webkit-mask: url("/assets/images/insta.svg");
+  mask: url("/assets/images/insta.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: $verd_fosc;
 }
 
 @media (min-width: 768px) {
-    .about {
-        width: $normal_width;
-    } 
+  .about {
+    width: $normal_width;
+  }
 }
 @media (min-width: 1024px) {
-    .about {
-        width: $small_width;
-    }
+  .about {
+    width: $small_width;
+  }
 }
 @media (min-width: 1280px) {
-    .about {
-        width: $smallest_width;
-        flex-direction: row;
-    }
-    .about_image {
-        padding: 1em;
-        width: 40%;
-    }
-    .about_text {
-        padding: 1em;
-    }
+  .about {
+    width: $smallest_width;
+    flex-direction: row;
+  }
+  .about_image {
+    padding: 1em;
+    width: 40%;
+  }
+  .about_text {
+    padding: 1em;
+  }
 }
